@@ -9,3 +9,18 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+model Friend {
+  id Int @id @default(autoincrement())
+  name String
+  age Int
+  interest String
+}
+
+model Animal {
+  id Int @id @default(autoincrement())
+  name String
+  isCute Boolean
+  dangerLevel Int
+}
+
